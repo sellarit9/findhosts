@@ -30,3 +30,10 @@ This is where you will set what subnets you wish to scan for hosts
 
 Script that runs nmap scan.
 At top, set your DD_CLIENT_API_KEY
+
+
+
+**In Datadog UI**
+
+You will see logs idexed, which come in as JSON, and from there you can created your facets.
+You will also see traces created and in time see the service map created (under the env you setup in the datadog yaml under apm_config)
