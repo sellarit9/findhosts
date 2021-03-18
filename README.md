@@ -19,3 +19,16 @@ Utilzing nmap (https://nmap.org/) to determine what hosts exists in a subnet. Th
     - Configure datadog.yaml 
       - apm_config: env: hosts (or whatever you want, this will be the Service Map scope)
   
+
+
+**config.yaml**
+This is where you will set what subnets you wish to scan for hosts
+
+instances:
+  - min_collection_interval: 30 (this will only be utilized if script is being run as a Datadog check(
+    subnet: 127.0.0.0 (hope this is obvious on what it should be....)
+    tags: ["app:tre","env:local","location:frisco"] (set some tags here) 
+
+**findHosts.py**
+Script that runs nmap scan.
+At top, set your DD_CLIENT_API_KEY
