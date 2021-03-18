@@ -1,10 +1,6 @@
 init_config:
 
 instances:
-  - min_collection_interval: 30
-    subnet: 127.0.0.0 
-    tags: ["app:tre","env:local","location:frisco"]  
-
-  - min_collection_interval: 14400
-    subnet: 23.202.231.0
-    tags: ["app:tre","env:cloud","location:sky"]
+  - min_collection_interval: 30 (this will only be utilized if script is being run as a Datadog check(
+    subnet: 127.0.0.0 (hope this is obvious on what it should be....)
+    tags: ["app:tre","env:local","location:frisco"] (set some tags here) 
