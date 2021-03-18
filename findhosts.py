@@ -7,7 +7,7 @@ import random
 import time
 import json
 
-DD_CLIENT_API_KEY = "<DD-API-KEY"
+DD_CLIENT_API_KEY = "<DD-API-KEY>"
 
 def sendLogToDatadog(aLog):
 	headers = {
